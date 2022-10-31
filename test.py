@@ -1,10 +1,11 @@
 from ast import Not
 from re import T
 
-temprature = 30
-if temprature > 30 :
-    print("It's a hot day")
-else :
-    print("It's not a hot day")
+name = input("please enter your name = ")
 
-print('samira')
+if len(name) < 3 :
+    print("name must be at least 3 characters")
+elif len(name) > 50 :
+    print("name can be a maximum of 50 character")
+else:
+    print("name looks good!")
