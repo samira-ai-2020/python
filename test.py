@@ -72,10 +72,10 @@ import numbers
 # print(emoji_converter(message))
 
 
-try:
-    Name = str(input('age: '))  
-except ValueError:
-    print('invalid Value')   
+# try:
+#     Name = int(input('age: '))
+# except ValueError:
+#     print('invalid Value')
 
 # class Point:
 #     def __int__(self, x, y):
@@ -96,11 +96,32 @@ except ValueError:
 #     def __int__(self, name, family):
 #         self.name = name
 #         self.family = family
-
-
+#
+#
 #     def talk(self):
 #         print("hello", self.name)
-
-
-# user = Person("samira ghasemi")
+#
+#
+# user = Person("samira")
 # print(user.name)
+#
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def talk(self):
+#         print(f"Hi , i am {self.name}")
+#
+#
+# samira = Person("Samira Ghasemi")
+# samira.talk()
+
+# import converters
+#
+# print(converters.kg_to_lbs(70))
+
+from utils import find_max
+
+numbers = [10, 3, 6, 2]
+max = find_max(numbers)
+print(max)
